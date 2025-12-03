@@ -145,5 +145,5 @@ streamlit run app.py --server.port $PORT --server.headless true --server.enableC
 
 ---
 <p align="center">
-  <img src="https://img.shields.io/badge/-══════════════════════-gradient?style=for-the-badge&logoColor=white">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&height=140&section=footer&text=&fontSize=1"/>
 </p>
