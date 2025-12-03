@@ -1,57 +1,63 @@
-# 🚀 Gupshupp AI Assignment (Groq API)
+# Gupshupp AI System — Memory Extraction & Personality Transformation
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![Groq](https://img.shields.io/badge/Groq-LLama3-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+[Live demo on Streamlit → https://memoryai.streamlit.app/](https://memoryai.streamlit.app/)
 
-An AI-powered system for **memory extraction** and **personality transformation**, built using **Groq’s ultra-fast LLaMA models** and **Streamlit**.
+> A lightweight Streamlit app that extracts structured memories (preferences, emotional patterns, key facts) from chat logs and rewrites text in different personality tones using the Groq LLaMA models.
 
 ---
 
-## 🌟 Features
+## Quick Links
 
-### 🧠 Memory Extraction
-- Extracts user preferences, emotions, and biographical facts  
-- Detects emotional patterns and repeated behaviours  
-- Outputs clean, structured JSON  
-
-### 🎭 Personality Engine
-Transforms text into 5 tones:
-- Calm Mentor  
-- Witty Friend  
-- Therapist  
-- Formal  
-- Playful  
-
-### 💻 Streamlit UI
-- Modern dark-theme interface  
-- Two simple pages: Memory Extractor & Personality Engine  
-- Copy-to-clipboard + JSON export  
+- Live app: https://memoryai.streamlit.app/
+- Repository: https://github.com/LikithGS11/gupshupp-ai-assignment
 
 ---
 
-## 🛠️ Installation
+## Features
 
-### 1. Create Virtual Environment
+- Memory Extraction: extracts preferences, emotional patterns, and facts from chat messages and returns a JSON object.
+- Personality Engine: rewrites text in 5 tones (Calm Mentor, Witty Friend, Therapist, Formal, Playful).
+- Streamlit UI: dark-themed, responsive, JSON export and copy-to-clipboard actions.
+
+---
+
+## Quick Start (local)
+
+1. Clone the repo:
+
 ```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-source venv/bin/activate # Mac/Linux
+git clone https://github.com/LikithGS11/gupshupp-ai-assignment.git
+cd gupshupp-ai-assignment
 ```
 
-### 2. Install Requirements
+2. Create and activate a virtual environment:
+
+Windows (PowerShell):
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+macOS / Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Add Environment Variables  
-Create `.env`:
-```
-GROQ_API_KEY=gsk_YOUR_KEY_HERE
+4. Add your Groq API key (create `.env`):
+
+```text
+GROQ_API_KEY=gsk_YOUR_GROQ_API_KEY_HERE
 ```
 
-### 4. Run App
+5. Run the app:
+
 ```bash
 streamlit run app.py
 ```
@@ -60,24 +66,36 @@ Open: http://localhost:8501
 
 ---
 
-## 📁 Project Structure
-```
-gupshupp-ai-assignment/
-├── app.py
-├── memory_extractor.py
-├── personality_engine.py
-├── requirements.txt
-├── .env.example
-└── README.md
-```
+## Usage
+
+- Memory Extractor: Paste chat messages (30+ messages recommended) and press **Extract Memory** to get structured JSON output.
+- Personality Engine: Enter text, pick a style, and press **Transform Text** to see the rewritten text.
 
 ---
 
-## 📚 Resources
-- Groq Console: https://console.groq.com  
-- Streamlit Docs: https://docs.streamlit.io  
+## Configuration & Notes
+
+- `requirements.txt` includes `streamlit`, `groq`, `httpx`, and `python-dotenv`.
+- The app creates an `httpx.Client(trust_env=False)` to avoid Windows proxy/env issues—no extra proxy config needed.
+- Tweak temperature and max_tokens inside the modules if you need different creativity/length.
 
 ---
 
-## ✨ Author
-Built by **Likith (2025)** • Powered by **Groq AI**
+## Deployments
+
+- Streamlit Cloud (recommended): connect your GitHub repo and select `app.py` as the entrypoint.
+- Render / Heroku: use `streamlit run app.py --server.port $PORT --server.headless true --server.enableCORS false` as the start command.
+
+---
+
+## Troubleshooting
+
+- If the app raises `GROQ_API_KEY` errors, ensure `.env` exists and contains your key.
+- If you see proxy-related errors on Windows, the app already disables `httpx` trust_env; ensure no conflicting network policies block outbound traffic.
+
+---
+
+## License & Credits
+
+MIT License — built by Likith • 2025. Powered by Groq AI and Streamlit.
+
