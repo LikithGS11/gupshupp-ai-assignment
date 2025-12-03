@@ -144,3 +144,6 @@ streamlit run app.py --server.port $PORT --server.headless true --server.enableC
 - Streamlit Docs: https://docs.streamlit.io
 
 ---
+<p align="center">
+  <img src="https://img.shields.io/badge/-══════════════════════-gradient?style=for-the-badge&logoColor=white">
+</p>
