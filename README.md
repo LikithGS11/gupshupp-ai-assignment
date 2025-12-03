@@ -145,8 +145,9 @@ streamlit run app.py --server.port $PORT --server.headless true --server.enableC
 
 ---
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0a0a0a&height=165&section=footer&text=&fontSize=0"/>
+  <img src="https://capsule-render.vercel.app/api?type=curve&color=0b0b0b&height=180&section=footer&text=&fontSize=0"/>
 </p>
+
 
 
 
