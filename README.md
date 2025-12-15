@@ -1,5 +1,5 @@
 <!-- prettier-ignore -->
-# 🧠 Gupshupp AI System
+# 🧠 Chat Memory and Personality Transformer
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.31.0-orange.svg?logo=streamlit&logoColor=white)](https://streamlit.io)
@@ -17,7 +17,7 @@
 
 ## ✨ Overview
 
-Gupshupp AI is a compact, production-minded Streamlit application that demonstrates two practical NLP capabilities:
+Chat Memory and Personality Transformer is a compact, production-minded Streamlit application that demonstrates two practical NLP capabilities:
 
 - **Memory Extraction** — Convert chat logs into structured memories (preferences, recurring emotions, key facts) as clean JSON.
 - **Personality Engine** — Rewrites or reframes text into distinct personality tones (e.g., Calm Mentor, Witty Friend, Therapist, Formal, Playful) while preserving intent.

@@ -10,7 +10,7 @@ from personality_engine import PersonalityEngine
 
 # Page configuration
 st.set_page_config(
-    page_title="Gupshupp AI System",
+    page_title="Chat Memory and Personality Transformer",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -394,7 +394,7 @@ if 'personality_engine' not in st.session_state:
 # Main header
 st.markdown("""
     <div class="main-header">
-        <h1>🧠 Gupshupp AI System</h1>
+        <h1>🧠 Chat Memory and Personality Transformer</h1>
         <p>Advanced Memory Extraction & Personality Transformation Engine</p>
     </div>
 """, unsafe_allow_html=True)
